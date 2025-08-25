@@ -1,0 +1,175 @@
+/*
+  =========================
+  1. General Page Styles
+  =========================
+  Sets up the overall typography, background, and layout.
+*/
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f9;
+    color: #333;
+}
+
+.container {
+    max-width: 960px;
+    margin: 20px auto; /* Centers the content on the page */
+    padding: 0 20px;
+}
+
+/*
+  =========================
+  2. Structural Elements
+  =========================
+  Styling for the header, footer, and main sections.
+*/
+.page-header {
+    background-color: #34495e;
+    color: #fff;
+    text-align: center;
+    padding: 3rem 0; /* Creates generous space inside the header box */
+    border-bottom: 5px solid #2980b9;
+}
+
+.page-header h1 {
+    margin-bottom: 0.5rem;
+    font-size: 2.5rem;
+}
+
+.page-header p {
+    margin-top: 0;
+    font-style: italic;
+    opacity: 0.8;
+}
+
+section {
+    background-color: #fff;
+    padding: 2rem;
+    margin-bottom: 2rem; /* Separates sections with external space */
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #ecf0f1;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.page-footer {
+    text-align: center;
+    padding: 1.5rem 0;
+    background-color: #34495e;
+    color: #fff;
+    margin-top: 2rem;
+}
+
+/*
+  =========================
+  3. The Box Model Demonstration
+  =========================
+  Clear visual representation of content, padding, border, and margin.
+*/
+.box-model-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 2rem;
+    padding: 20px;
+    border: 2px dashed #95a5a6;
+    background-color: #ecf0f1;
+}
+
+.box {
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    margin: 10px; /* Small margin to separate the boxes */
+}
+
+/* Specific styling to highlight each part of the box model */
+.content {
+    background-color: #2ecc71;
+    padding: 15px; /* Added padding to make the box more visible */
+    width: 80px;
+}
+
+.padding {
+    background-color: #3498db;
+    padding: 30px; /* Expands the box inwards from the border */
+    border: 2px solid #2980b9;
+}
+
+.border {
+    background-color: #e67e22;
+    padding: 20px;
+    border: 15px solid #d35400; /* A thick border to clearly show its space */
+}
+
+.margin {
+    background-color: #e74c3c;
+    padding: 20px;
+    margin: 50px; /* A large margin to show external spacing */
+    border: 2px solid #c0392b;
+}
+
+/*
+  =========================
+  4. Card & Button Styling
+  =========================
+  Applying the box model for practical design.
+*/
+.card-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* A modern way to add spacing between flex items */
+}
+
+.card {
+    flex: 1; /* Makes both cards grow to fill available space equally */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.card-1 {
+    background-color: #fcfcfc;
+}
+
+.card-2 {
+    background-color: #f8f8f8;
+}
+
+.card-body {
+    padding-top: 10px;
+    border-top: 1px dashed #eee;
+    margin-top: 10px;
+}
+
+.styled-button {
+    background-color: #2980b9;
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 15px;
+}
+
+.styled-button:hover {
+    background-color: #3498db;
+}
+
+.styled-button.secondary {
+    background-color: #bdc3c7;
+}
+
+.styled-button.secondary:hover {
+    background-color: #95a5a6;
+}
